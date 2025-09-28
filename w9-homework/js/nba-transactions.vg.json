@@ -23,18 +23,18 @@
     },
     {
       "data": {
-        "url": "../data/states-10m-cut.json",
+        "url": "w9-homework/data/states-10m-cut.json",
         "format": {"type": "topojson", "feature": "states"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
-      "data": {"url": "../data/trade_counts_per_year.csv"},
+      "data": {"url": "w9-homework/data/trade_counts_per_year.csv"},
       "transform": [
         {
           "lookup": "Team",
           "from": {
-            "data": {"url": "../data/nba_stadiums.csv"},
+            "data": {"url": "w9-homework/data/nba_stadiums.csv"},
             "key": "Team",
             "fields": ["Lat", "Long"]
           }
